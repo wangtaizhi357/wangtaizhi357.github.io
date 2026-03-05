@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>王泰之 - 个人介绍</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6',
+                        secondary: '#10B981',
+                        accent: '#8B5CF6',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                },
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow {
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            }
+            .bg-gradient-blue {
+                background: linear-gradient(135deg, #3B82F6 0%, #60A5FA 100%);
+            }
+            .transition-all-300 {
+                transition: all 300ms ease-in-out;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Hero Section -->
+    <section class="bg-gradient-blue text-white py-20 px-4">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-4 text-shadow">王泰之</h1>
+            <p class="text-xl md:text-2xl mb-8">个人介绍</p>
+            <div class="flex justify-center space-x-6">
+                <a href="#about" class="bg-white text-primary px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition-all-300">
+                    了解更多
+                </a>
+                <a href="#contact" class="bg-transparent border-2 border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-primary transition-all-300">
+                    联系我
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 px-4">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">关于我</h2>
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <div class="flex flex-col md:flex-row items-center mb-8">
+                    <div class="w-32 h-32 rounded-full bg-primary text-white flex items-center justify-center text-4xl font-bold mb-4 md:mb-0 md:mr-8">
+                        王
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-800">王泰之</h3>
+                        <p class="text-gray-600 mt-2">语言爱好者 | 学习者</p>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <p class="text-gray-700 leading-relaxed">
+                        你好！我是王泰之，一个热爱学习语言的学生。我对语言学习充满热情，并且在英语学习方面取得了不错的成绩。
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        我已经通过了剑桥英语FCE考试，获得了176分的优秀成绩，这证明了我在英语听、说、读、写各方面的能力。
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        此外，我还学习了一些西班牙语，虽然目前水平有限，但我一直在努力提高。我相信多语言能力不仅能够帮助我更好地与世界交流，也能开阔我的视野。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-16 px-4 bg-gray-100">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">我的语言能力</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- English Skill -->
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 text-primary flex items-center justify-center mr-4">
+                            <i class="fa fa-language text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">英语</h3>
+                    </div>
+                    <div class="mb-4">
+                        <div class="flex justify-between mb-1">
+                            <span class="text-gray-600">FCE成绩: 176分</span>
+                            <span class="text-gray-600">优秀</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-primary h-2.5 rounded-full" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">
+                        我具备良好的英语听说读写能力，能够流畅地与母语者交流，阅读英文原版书籍和文章，并且能够撰写结构清晰、表达准确的英文文章。
+                    </p>
+                </div>
+                
+                <!-- Spanish Skill -->
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-yellow-100 text-yellow-600 flex items-center justify-center mr-4">
+                            <i class="fa fa-language text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">西班牙语</h3>
+                    </div>
+                    <div class="mb-4">
+                        <div class="flex justify-between mb-1">
+                            <span class="text-gray-600">基础水平</span>
+                            <span class="text-gray-600">学习中</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-yellow-500 h-2.5 rounded-full" style="width: 40%"></div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">
+                        我正在学习西班牙语，掌握了基本的日常用语和简单的语法结构，能够进行简单的对话和理解基础的西班牙语内容。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-4">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">联系我</h2>
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">联系方式</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center mr-4">
+                                    <i class="fa fa-envelope"></i>
+                                </div>
+                                <span class="text-gray-700">example@email.com</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center mr-4">
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                                <span class="text-gray-700">+86 123 4567 8910</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center mr-4">
+                                    <i class="fa fa-map-marker"></i>
+                                </div>
+                                <span class="text-gray-700">中国</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">发送消息</h3>
+                        <form class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-gray-700 mb-2">姓名</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 mb-2">邮箱</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-gray-700 mb-2">消息</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                            </div>
+                            <button type="submit" class="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600 transition-all-300">
+                                发送
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 px-4">
+        <div class="container mx-auto max-w-4xl text-center">
+            <p class="mb-4">王泰之 - 个人介绍网站</p>
+            <div class="flex justify-center space-x-4">
+                <a href="#" class="text-white hover:text-primary transition-all-300">
+                    <i class="fa fa-facebook-square text-xl"></i>
+                </a>
+                <a href="#" class="text-white hover:text-primary transition-all-300">
+                    <i class="fa fa-twitter-square text-xl"></i>
+                </a>
+                <a href="#" class="text-white hover:text-primary transition-all-300">
+                    <i class="fa fa-instagram text-xl"></i>
+                </a>
+                <a href="#" class="text-white hover:text-primary transition-all-300">
+                    <i class="fa fa-linkedin-square text-xl"></i>
+                </a>
+            </div>
+            <p class="mt-6 text-gray-400 text-sm">© 2026 王泰之. 保留所有权利.</p>
+        </div>
+    </footer>
+
+    <script>
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // 表单提交处理
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('消息已发送！');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
